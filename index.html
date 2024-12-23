@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Company - Professional Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("nG--sZzsWFwDLXK38");
+        })();
+    </script>
+    <style>
+        :root {
+            --primary-color: #465f9f;     /* Blue from logo */
+            --secondary-color: #9dc85d;   /* Green from logo */
+            --primary-dark: #334773;      /* Darker blue for contrast */
+            --secondary-dark: #7ea040;    /* Darker green for contrast */
+            --text-dark: #2c3e50;         /* Dark blue-gray for text */
+            --text-light: #666666;        /* Gray for secondary text */
+            --background-light: #f8f9fa;  /* Light gray for backgrounds */
+            --background-dark: #1a2942;   /* Very dark blue for contrast */
+            --white: #ffffff;
+            --overlay: rgba(70, 95, 159, 0.85); /* Semi-transparent primary color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="images/company-logo.png" alt="Company Logo" class="logo-img">
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-logo">
+                <img src="images/company-logo.png" alt="Company Logo">
+            </div>
+            <h1>Welcome to Our Company</h1>
+            <p>Delivering Excellence in Professional Solutions</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Duogadi Indo Utama adalah perusahaan yang bergerak di bidang jasa. Kehadiran kami untuk memenuhi dan memaksimalkan berbagai bisnis klien kami. Dengan didukung tim terbaik kami yang dapat menyediakan kebutuhan yang ada di instansi dan perusahaan terkait.
+                        Kami didirikan dengan cita-cita untuk menciptakan kemajuan bisnis yang berdikari dan sustainable. Selaras dengan hal tersebut, bertekad berperan aktif di dalam melaksanakannya, dengan berlandaskan kepercayaan akan kemampuan diri secara profesional dan bertanggung jawab.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="vision">
+        <div class="container">
+            <h2>Our Vision</h2>
+            <div class="vision-content">
+                <div class="vision-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Untuk menciptakan pengalaman bisnis yang lebih baik antar para pelaku usaha</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <h2>Our Missions</h2>
+            <div class="mission-grid">
+                <div class="mission-category">
+                    <i class="fas fa-star"></i>
+                    <h3>Excellence in Service</h3>
+                    <p>Providing excellent service and value-added solutions to all clients, ensuring their success and satisfaction through our comprehensive range of services.</p>
+                </div>
+                <div class="mission-category">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Strategic Partnerships</h3>
+                    <p>Developing partnerships to complement capabilities and expand the company's offerings, creating a stronger network of solutions for our clients.</p>
+                </div>
+                <div class="mission-category">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainable Growth</h3>
+                    <p>Providing optimal benefits for the company, employees and the community while maintaining a strong commitment to environmental care and sustainability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="why-us-grid">
+                <div class="why-us-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Flexible</h3>
+                    <p>We adapt to your needs and provide customized solutions that work best for your business.</p>
+                </div>
+                <div class="why-us-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Response</h3>
+                    <p>Our dedicated team ensures quick response times and efficient problem resolution.</p>
+                </div>
+                <div class="why-us-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>New Technology</h3>
+                    <p>We stay current with the latest technologies to deliver modern and efficient solutions.</p>
+                </div>
+                <div class="why-us-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Complete Reports</h3>
+                    <p>Detailed documentation and comprehensive reporting for all our services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <!-- Technology Services -->
+                <div class="service-card">
+                    <i class="fas fa-users-gear"></i>
+                    <h3>IT Consultant</h3>
+                    <p>Kami membantu menemukan solusi atas masalah dalam sistem anda dan memanduuntuk memulai solusi IT terbaik untuk usaha atau perusahaan anda</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>System Development</h3>
+                    <p>Membangun aplikasi secara eksklusif
+100% berdasarkan kebutuhan anda
+sepenuhnya didedikasikan untuk
+mengembangkan sistem berkualitas
+tinggu</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Monitoring & Maintenance</h3>
+                    <p>Kami juga memberikan garansi aplikasi
+atas apa yang telah kami buat atau
+kembangkan dan membantu dalam
+pengoprasian sistem.
+</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Development</h3>
+                    <p>Kami juga memberikan garansi aplikasi
+atas apa yang telah kami buat atau
+kembangkan dan membantu dalam
+pengoprasian sistem.
+</p>
+                </div>
+
+                <!-- Publishing Services -->
+                <div class="service-card">
+                    <i class="fas fa-newspaper"></i>
+                    <h3>Publishing Services</h3>
+                    <p>Surat kabar menyampaikan berita harian, jurnal menyebarkan penelitian ilmiah berkala, dan buletin majalah menyediakan informasi khusus secara periodik untuk audiens tertentu. Kami menyediakan layanan penerbitan berkualitas tinggi untuk semua kebutuhan Anda.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check-circle"></i> Newspapers</span>
+                        <span><i class="fas fa-check-circle"></i> Journals</span>
+                        <span><i class="fas fa-check-circle"></i> Magazines</span>
+                        <span><i class="fas fa-check-circle"></i> Bulletins</span>
+                    </div>
+                </div>
+
+                <!-- Environmental Services -->
+                <div class="service-card">
+                    <i class="fas fa-bug"></i>
+                    <h3>Pest Control</h3>
+                    <p>Pest Control adalah program
+pengendalian hama umum
+yang ada di lingkungan
+pemukiman,perkantoran atau
+industrial seperti tikus
+lalat,nyamuk,kecoa dan
+semuat
+</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-bug-slash"></i>
+                    <h3>Termite Control</h3>
+                    <p>Termite Control merupakan
+jenis pengendalian hama
+rayap dapat merusak properti
+yang ada di rumah anda
+khususnya properti yang
+berbahan dasar kayu.
+</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-spray-can"></i>
+                    <h3>Fumigation</h3>
+                    <p>Pengertian fumigasi adalah sebuah
+metode pengendalian hama yang
+dilakukan dengan cara pengasapan
+pestisida dalam bentuk gas.Pestisida
+atau bahan kimia yang digunakan ini
+lebih sering dikenal dengan sebutan
+fumigan.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-broom"></i>
+                    <h3>Sanitation</h3>
+                    <p>Sanitasi adalah upaya untuk
+mengendalikan dan mengelola bau
+yang tidak diinginkan atau tidak
+menyenangkan di lingkungan tertentu.
+Bau-bauan ini bisa berasal dari
+berbagai sumber, seperti limbah
+organik, limbah industri, atau aktivitas
+manusia lainnya</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cart-shopping"></i>
+                    <h3>Procurement</h3>
+                    <p>Menyediakan pembelian alat dan
+barang kebutuhan kantor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="documentation">
+        <div class="container">
+            <h2>Work Documentation</h2>
+            <div class="documentation-grid">
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg" alt="Work Documentation 1">
+                        <div class="doc-overlay">
+                            <h3>Project Implementation</h3>
+                            <p>Documentation of successful project delivery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" alt="Work Documentation 2">
+                        <div class="doc-overlay">
+                            <h3>Service Delivery</h3>
+                            <p>Professional service execution</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_1280.jpg" alt="Work Documentation 3">
+                        <div class="doc-overlay">
+                            <h3>Team Collaboration</h3>
+                            <p>Our team working on client projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="https://cdn.pixabay.com/photo/2015/02/02/11/08/office-620817_1280.jpg" alt="Work Documentation 4">
+                        <div class="doc-overlay">
+                            <h3>Quality Assurance</h3>
+                            <p>Maintaining high standards in our work</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jl.Nusa Indah Bukit Nusa Indah No 30</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+62 856-9143-2288</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>revyrohatta@gmail.com</p>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <input type="text" id="from_name" name="from_name" placeholder="Your Name" required>
+                    <input type="email" id="from_email" name="from_email" placeholder="Your Email" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-button">
+                        <span class="button-text">Send Message</span>
+                        <span class="button-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/company-logo.png" alt="Company Logo">
+                </div>
+                <p>&copy; 2024 CompanyName. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
